@@ -2,21 +2,102 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
-  <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+
+<style>
+body{
+  background-color:#FFCC99;
+  text-align:center;
+  margin: 0 auto;
+} 
+  .divcss5{
+    margin:0 auto;
+    width:400px;
+    height:100px;
+     color: #fff; 
+  } 
+  .title{
+    color: #FF9966; 
+  }
+  .btn { 
+    display: block; 
+    position: relative; 
+    background: #F4A460; 
+    padding: 15px 52px;
+    float: center; 
+    color: #fff; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    margin:0 auto
+    }  
+    .btn:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #F5DEB3;
+    }
+    .js-option,.btn{ 
+      float:left
+    } 
+</style>
+
+  <body> 
+    </br>
+    <h4 class="title" >Calculator</h4> 
+     <div class="divcss5">
+          <table class="table table-striped">
+               <thead>
+                   <th>item</th>
+                   <th>enter</th>   
+               </thead>
+               <tbody>
+               <tr>
+                <td >Bar name</td>
+                <td>
+                   <div id="bar">
+                   <input class="js-name" type="text"/></td></div>
+
+               <tr>
+                <td >Price by hour</td>
+                <td>
+                    <div id="bar">
+                   <input class="js-price-by-hour" type="number"/></td></div>
+
+                <tr>
+                <td >Price by person</td>
+                <td>
+                    <div id="bar">
+                   <input class="js-price-by-person" type="number"/></td></div>
+
+
+                <tr>
+                <td >Booker name</td>
+                <td>
+                    <div id="booker">
+                   <input class="js-name" type="text"/></td></div>
+
+                <tr>
+                <td >Time in h</td>
+                <td>
+                   <div id="booker">
+                   <input class="js-time" type="text"/></td></div>
+
+                <tr>
+                <td >Persons</td>
+                <td>
+                   <div id="booker">
+                   <input class="js-persons" type="number"/></td></div></br>
+                </tbody>
+                </table></br></br>
+
+                <div id="booker">
+                <input class="js-option" type="checkbox" 
+                style="position:relative; margin-left:100px; margin-right: 30px;
+  margin-top: 20px;" />
+                   <button id="compute" class = "btn" style="margin:0 auto">Compute</button></div>     
+      </div>
+
+    <div id="actors" style="position:relative; margin-left:40px; margin-right: 30px; margin-top: 300px; color: #fff; " ></div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
   </body>
